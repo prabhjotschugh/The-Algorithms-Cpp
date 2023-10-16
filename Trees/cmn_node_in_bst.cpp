@@ -85,21 +85,14 @@ class Solution
 };
 int main()
 {
-    int t;
-    cin>>t;
-    getchar();
-    while(t--)
-    {
-        string s;
-        getline(cin,s);
-        Node* root1 = buildTree(s);
-        getline(cin,s);
-        Node* root2 = buildTree(s);
-        Solution ob;
+	string s1,s2;
+        Node* root1 = buildTree(s1);
+        Node* root2 = buildTree(s2);
+        Solution ob;`
         vector <int> res = ob.findCommon(root1, root2);
         for (int i : res)
             cout << i << " ";
         cout<< endl;
     }
-	return 1;
+	return 0;
 }
